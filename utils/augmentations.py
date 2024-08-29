@@ -311,7 +311,7 @@ def mixup(im, labels, im2, labels2):
     return im, labels
 
 
-def box_candidates(box1, box2, wh_thr=2, ar_thr=100, area_thr=0.1, eps=1e-16):
+def box_candidates(box1, box2, wh_thr=2, ar_thr=520, area_thr=0.1, eps=1e-16):
     """
     Filters bounding box candidates by minimum width-height threshold `wh_thr` (pixels), aspect ratio threshold
     `ar_thr`, and area ratio threshold `area_thr`.
